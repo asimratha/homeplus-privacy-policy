@@ -46,11 +46,11 @@ c) Notification Access (Optional):
    - Data Handling: Notification contents are processed locally in real time and
      are never recorded or stored.
 
-d) Accessibility Service (Optional):
-   - Purpose: Exclusively used for the "Double Tap to Sleep" gesture to lock the
-     screen without requiring root permissions.
-   - Data Handling: The Accessibility Service does not observe or collect your
-     keystrokes, screen content, or user interactions.
+d) Accessibility Service API (Optional):
+   - Purpose: Used strictly for user-triggered gestures:
+     1. "Double Tap to Sleep" to lock/turn off the screen without physical buttons.
+     2. "System Quick Actions" to trigger system navigation (e.g., opening notifications, recent apps) via gestures.
+   - Data Handling & Privacy: The Accessibility Service does NOT observe, collect, store, or transmit your personal data, keystrokes, screen content, or user interactions. All gesture processing occurs strictly offline on your local device.
 
 e) Location (Optional):
    - Purpose: If enabled, used locally to display accurate weather information
